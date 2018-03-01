@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C20EAAA9-10F3-42D2-95D5-2EF2423279EF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Document</RootNamespace>
+    <AssemblyName>Document</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DeployIisAppPath>Document</DeployIisAppPath>
+    <PublishDatabases>true</PublishDatabases>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminScreens.aspx" />
+    <Content Include="App_Themes\Default\images\animated-overlay.gif" />
+    <Content Include="App_Themes\Default\images\docsys-26.png" />
+    <Content Include="App_Themes\Default\images\loading.gif" />
+    <Content Include="App_Themes\Default\images\ui-icons_4eb305_256x240.png" />
+    <Content Include="App_Themes\Default\jquery-ui-1.10.1.redmond.css" />
+    <Content Include="App_Themes\Default\ui.multiselect.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="App_Themes\Default\csshover3.htc" />
+    <Content Include="App_Themes\Default\ui-default-1.1.2.css" />
+    <Content Include="App_Themes\Default\ellipsis-xbl.xml" />
+    <Content Include="App_Themes\Default\fileuploader.css" />
+    <Content Include="App_Themes\Default\images\ajax-loader.gif" />
+    <Content Include="App_Themes\Default\images\body-bg.jpg" />
+    <Content Include="App_Themes\Default\images\calendar.gif" />
+    <Content Include="App_Themes\Default\images\demo-config-on-l-r.gif" />
+    <Content Include="App_Themes\Default\images\demo-config-on-r.gif" />
+    <Content Include="App_Themes\Default\images\demo-config-on-tile.gif" />
+    <Content Include="App_Themes\Default\images\demo-config-on.gif" />
+    <Content Include="App_Themes\Default\images\footer-bg.png" />
+    <Content Include="App_Themes\Default\images\i_indicator.gif" />
+    <Content Include="App_Themes\Default\images\i_search_input.png" />
+    <Content Include="App_Themes\Default\images\left-bg.png" />
+    <Content Include="App_Themes\Default\images\ms-word.ico" />
+    <Content Include="App_Themes\Default\images\navigation-bg.png" />
+    <Content Include="App_Themes\Default\images\navigation-hover.png" />
+    <Content Include="App_Themes\Default\images\navigation-on-l-r.gif" />
+    <Content Include="App_Themes\Default\images\navigation-on-r.gif" />
+    <Content Include="App_Themes\Default\images\navigation-on-tile.gif" />
+    <Content Include="App_Themes\Default\images\navigation-on.gif" />
+    <Content Include="App_Themes\Default\images\navigation-separator.png" />
+    <Content Include="App_Themes\Default\images\right-bg.png" />
+    <Content Include="App_Themes\Default\images\ui-anim_basic_16x16.gif" />
+    <Content Include="App_Themes\Default\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\Default\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="App_Themes\Default\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="App_Themes\Default\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="App_Themes\Default\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="App_Themes\Default\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="App_Themes\Default\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="App_Themes\Default\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="App_Themes\Default\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="App_Themes\Default\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="App_Themes\Default\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="App_Themes\Default\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="App_Themes\Default\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="App_Themes\Default\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="App_Themes\Default\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Help.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="js\admin\adminOrg-1.0.1.js" />
+    <Content Include="js\admin\controlCardBlankA-1.0.7.js" />
+    <Content Include="js\admin\controlCardBlankD-1.1.4.js" />
+    <Content Include="js\admin\adminDocumentBlank-1.1.3.js" />
+    <Content Include="js\admin\adminDocuments-1.1.6.js" />
+    <Content Include="js\admin\controlCardGroupDocument-1.1.4.js" />
+    <Content Include="js\admin\statementBlank-1.1.4.js" />
+    <Content Include="js\admin\statementControlCardBlank-1.1.0.js" />
+    <Content Include="js\admin\statements-1.1.5.js" />
+    <Content Include="js\asDocumentBlank-1.0.1.js" />
+    <Content Include="js\asDocuments-1.0.0.js" />
+    <Content Include="js\controlCardBlankA-1.0.3.js" />
+    <Content Include="js\decisionBlank-1.0.0.js" />
+    <Content Include="js\documentsTable-1.0.0.js" />
+    <Content Include="js\ducument-ui-1.0.1.js" />
+    <Content Include="ImageViewer.aspx" />
+    <Content Include="js\controlCardBlankD-1.0.8.js" />
+    <Content Include="js\hrm-ui-1.0.8.js" />
+    <Content Include="js\lib\jquery-1.9.1.js" />
+    <Content Include="js\lib\jquery-1.9.1.min.js" />
+    <Content Include="js\lib\jquery-ui-1.10.0.custom.fix.js" />
+    <Content Include="js\lib\jquery-ui-1.10.0.custom.min.js" />
+    <Content Include="js\lib\jquery-ui-1.10.1.custom.fix.js" />
+    <Content Include="js\lib\jquery-ui-1.10.1.custom.js" />
+    <Content Include="js\lib\jquery-ui-1.10.1.custom.min.js" />
+    <Content Include="js\lib\jquery.jqGrid-4.7.0.src.js" />
+    <Content Include="js\lib\json2.js" />
+    <Content Include="App_Themes\Default\menu-ui-1.0.1.css" />
+    <Content Include="js\menu-1.0.1.js" />
+    <Content Include="js\models\models-1.0.3.js" />
+    <Content Include="js\ui-components-0.2.js" />
+    <Content Include="js\worker\workerStatementBlank-1.0.8.js" />
+    <Content Include="js\worker\workerStatements-1.0.8.js" />
+    <Content Include="js\worker\workerDraftDocuments-1.0.0.js" />
+    <Content Include="js\worker\draftDocumentBlank-1.0.1.js" />
+    <Content Include="js\navigation-1.0.2.js" />
+    <Content Include="js\org-ui-1.0.0.js" />
+    <Content Include="js\pages\help-page-1.0.0.js" />
+    <Content Include="js\remoteScanner-1.0.0.js" />
+    <Content Include="js\statements-1.0.5.js" />
+    <Content Include="js\statementBlank-1.0.6.js" />
+    <Content Include="App_Themes\Default\ui.jqgrid-4.4.4.css" />
+    <Content Include="Controls\Master\Menu.ascx" />
+    <Content Include="Controls\Master\UserLogin.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="js\documentBlank-1.1.1.js" />
+    <Content Include="js\documents-1.0.8.js" />
+    <Content Include="js\lib\fileuploader-1.1.4.js" />
+    <Content Include="js\i18n\grid.locale-ua.js" />
+    <Content Include="js\i18n\jquery.ui.datepicker-uk.js" />
+    <Content Include="js\lib\jquery.jqGrid-4.4.4.min.js" />
+    <Content Include="js\lib\jquery.jqGrid-4.4.4.src.js" />
+    <Content Include="js\templateHelper-1.0.0.js" />
+    <Content Include="js\webscan.js" />
+    <Content Include="js\worker\outputDocumentBlank-1.0.0.js" />
+    <Content Include="js\worker\inputDocumentBlank-1.0.4.js" />
+    <Content Include="js\worker\workerInputDocuments-1.0.3.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Main.aspx" />
+    <Content Include="MainOld.aspx" />
+    <Content Include="Reports.aspx" />
+    <Content Include="ReportTemplates\ControlCardRTF.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ReportTemplates\ControlCardTemplate.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ReportTemplates\DocStatementControlledRTF.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ReportTemplates\DocStatementFullStatisticsRTF.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ReportTemplates\DocStatementStatisticsRTF.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ReportTemplates\DocTCalendarPlaneRTF.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ReportTemplates\DocTControlledRTF.xslt" />
+    <Content Include="ReportTemplates\DocTDoneRTF.xslt" />
+    <Content Include="ReportTemplates\DocTStatisticsRTF.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ReportTemplates\StatisticsBlank.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="resources\creating-control-card.html" />
+    <Content Include="resources\creating-document.html" />
+    <Content Include="resources\default.html" />
+    <Content Include="resources\documents-error.html" />
+    <Content Include="resources\documents-list.html" />
+    <Content Include="resources\excanvas.js" />
+    <Content Include="resources\images\creating-control-card.png" />
+    <Content Include="resources\images\creating-document-1.png" />
+    <Content Include="resources\images\creating-document-10.png" />
+    <Content Include="resources\images\creating-document-11.png" />
+    <Content Include="resources\images\creating-document-12.png" />
+    <Content Include="resources\images\creating-document-13.png" />
+    <Content Include="resources\images\creating-document-14.png" />
+    <Content Include="resources\images\creating-document-15.png" />
+    <Content Include="resources\images\creating-document-2.png" />
+    <Content Include="resources\images\creating-document-3.png" />
+    <Content Include="resources\images\creating-document-4.png" />
+    <Content Include="resources\images\creating-document-5.png" />
+    <Content Include="resources\images\creating-document-6.png" />
+    <Content Include="resources\images\creating-document-7.png" />
+    <Content Include="resources\images\creating-document-8.png" />
+    <Content Include="resources\images\creating-document-9.png" />
+    <Content Include="resources\images\creating-document.png" />
+    <Content Include="resources\images\documents-error.png" />
+    <Content Include="resources\images\documents-list.png" />
+    <Content Include="resources\images\main-menu.png" />
+    <Content Include="resources\images\menu.png" />
+    <Content Include="resources\images\new-records.png" />
+    <Content Include="resources\images\registration-document.png" />
+    <Content Include="resources\images\registration-document1.png" />
+    <Content Include="resources\images\registration-document10.png" />
+    <Content Include="resources\images\registration-document11.png" />
+    <Content Include="resources\images\registration-document12.png" />
+    <Content Include="resources\images\registration-document13.png" />
+    <Content Include="resources\images\registration-document14.png" />
+    <Content Include="resources\images\registration-document15.png" />
+    <Content Include="resources\images\registration-document16.png" />
+    <Content Include="resources\images\registration-document2.png" />
+    <Content Include="resources\images\registration-document3.png" />
+    <Content Include="resources\images\registration-document4.png" />
+    <Content Include="resources\images\registration-document5.png" />
+    <Content Include="resources\images\registration-document6.png" />
+    <Content Include="resources\images\registration-document7.png" />
+    <Content Include="resources\images\registration-document8.png" />
+    <Content Include="resources\images\registration-document9.png" />
+    <Content Include="resources\images\setting.png" />
+    <Content Include="resources\menu.html" />
+    <Content Include="resources\new-records.css" />
+    <Content Include="resources\new-records.html" />
+    <Content Include="resources\registration-document.css" />
+    <Content Include="resources\registration-document.html" />
+    <Content Include="resources\style-creating-document.css" />
+    <Content Include="resources\style-documents-error.css" />
+    <Content Include="resources\style-documents-list.css" />
+    <Content Include="resources\style.css" />
+    <Content Include="resources\tagcanvas-2.1.js" />
+    <Content Include="Service.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="js\worker\workerOutputDocuments-1.0.0.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminScreens.aspx.cs">
+      <DependentUpon>AdminScreens.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminScreens.aspx.designer.cs">
+      <DependentUpon>AdminScreens.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\WorkerMasterPage.Master.cs">
+      <DependentUpon>WorkerMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\WorkerMasterPage.Master.designer.cs">
+      <DependentUpon>WorkerMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Custom\ContentPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Custom\CurrentTheme.cs" />
+    <Compile Include="UI\Custom\CustomMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Custom\CustomUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Custom\QueryStringHelper.cs" />
+    <Compile Include="UI\DocumentContentPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\DocumentLookupUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\DocumentMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\DocumentMessageList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\DocumentModal.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\DocumentUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PuplicPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\RestrictedPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Master\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Master\Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Master\UserLogin.ascx.cs">
+      <DependentUpon>UserLogin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Master\UserLogin.ascx.designer.cs">
+      <DependentUpon>UserLogin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="File.ashx.cs">
+      <DependentUpon>File.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\DataPoint.ashx.cs">
+      <DependentUpon>DataPoint.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageViewer.aspx.cs">
+      <DependentUpon>ImageViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageViewer.aspx.designer.cs">
+      <DependentUpon>ImageViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainOld.aspx.cs">
+      <DependentUpon>MainOld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainOld.aspx.designer.cs">
+      <DependentUpon>MainOld.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\MainMasterPage.Master.cs">
+      <DependentUpon>MainMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\MainMasterPage.Master.designer.cs">
+      <DependentUpon>MainMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service.aspx.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service.aspx.designer.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Uploader.ashx.cs">
+      <DependentUpon>Uploader.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPages\MainMasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BizObj\BizObj.csproj">
+      <Project>{19B7BD7A-8670-45BB-AED3-A6FD14C0F203}</Project>
+      <Name>BizObj</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PermissionMembership\PermissionMembership.csproj">
+      <Project>{F8BA1635-836D-4B64-9CA0-FE0B23FA743D}</Project>
+      <Name>PermissionMembership</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Handlers\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Handlers\DataPoint.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Uploader.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="File.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\controlCardBlankDecision-1.0.0.js" />
+    <Content Include="MasterPages\WorkerMasterPage.Master" />
+    <None Include="Properties\PublishProfiles\DocSysToServer.pubxml" />
+    <Content Include="resources\docsys_help.doc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="js\core\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5172</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/docsys</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

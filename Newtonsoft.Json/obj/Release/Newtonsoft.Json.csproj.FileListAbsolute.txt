@@ -1,0 +1,12 @@
+D:\projects\document\Document\Newtonsoft.Json\bin\Release\Net40\Newtonsoft.Json.xml
+D:\projects\document\Document\Newtonsoft.Json\bin\Release\Net40\Newtonsoft.Json.dll
+D:\projects\document\Document\Newtonsoft.Json\bin\Release\Net40\Newtonsoft.Json.pdb
+D:\projects\document\Document\Newtonsoft.Json\obj\Release\Newtonsoft.Json.dll
+D:\projects\document\Document\Newtonsoft.Json\obj\Release\Newtonsoft.Json.pdb
+D:\projects\document\Document\Newtonsoft.Json\obj\Release\Newtonsoft.Json.csprojResolveAssemblyReference.cache
+D:\projects\docSys\Document\Newtonsoft.Json\bin\Release\Net40\Newtonsoft.Json.xml
+D:\projects\docSys\Document\Newtonsoft.Json\bin\Release\Net40\Newtonsoft.Json.dll
+D:\projects\docSys\Document\Newtonsoft.Json\bin\Release\Net40\Newtonsoft.Json.pdb
+D:\projects\docSys\Document\Newtonsoft.Json\obj\Release\Newtonsoft.Json.csprojResolveAssemblyReference.cache
+D:\projects\docSys\Document\Newtonsoft.Json\obj\Release\Newtonsoft.Json.dll
+D:\projects\docSys\Document\Newtonsoft.Json\obj\Release\Newtonsoft.Json.pdb

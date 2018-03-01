@@ -1,0 +1,17 @@
+D:\projects\document\Document\Document\obj\Debug\WebAppDocs.csprojResolveAssemblyReference.cache
+D:\projects\document\Document\Document\bin\Document.dll
+D:\projects\document\Document\Document\bin\Document.pdb
+D:\projects\document\Document\Document\bin\BizObj.dll
+D:\projects\document\Document\Document\bin\PermissionMembership.dll
+D:\projects\document\Document\Document\bin\Newtonsoft.Json.dll
+D:\projects\document\Document\Document\bin\Rtf.dll
+D:\projects\document\Document\Document\bin\VirtualFileSystem.dll
+D:\projects\document\Document\Document\bin\Microsoft.ApplicationBlocks.Data.dll
+D:\projects\document\Document\Document\bin\BizObj.pdb
+D:\projects\document\Document\Document\bin\PermissionMembership.pdb
+D:\projects\document\Document\Document\bin\Newtonsoft.Json.pdb
+D:\projects\document\Document\Document\bin\Newtonsoft.Json.xml
+D:\projects\document\Document\Document\bin\Rtf.pdb
+D:\projects\document\Document\Document\bin\VirtualFileSystem.pdb
+D:\projects\document\Document\Document\obj\Debug\Document.dll
+D:\projects\document\Document\Document\obj\Debug\Document.pdb

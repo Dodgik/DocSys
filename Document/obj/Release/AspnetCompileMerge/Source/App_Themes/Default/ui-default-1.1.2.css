@@ -1,0 +1,671 @@
+﻿body
+{
+    behavior: url(csshover3.htc);
+    background: #e0dee9 url(images/body-bg.jpg) repeat;
+    font-size: .75em;
+    font-family: Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+.cp {
+    cursor: pointer;
+}
+.dn {
+    display: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.fs-i {
+    font-style: italic;
+}
+.fw-n {
+    font-weight: normal;
+}
+
+.btn:enabled {
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+}
+.btn:enabled:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-backface-visibility: hidden;
+}
+.btn:active {
+    cursor: pointer;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-backface-visibility: hidden;
+}
+
+#outer_wrapper
+{
+    /* т.к. min-width не поддерживается IE, мы будем использовать скрипт написанный PVII */
+    min-width: 740px; /* Правило для решения бага прорисовки фона в IE, но т.к. оно создает промежуток под футером, мы добавим такое же правило в блок #footer */
+    width: 100%;
+    /* Техника ложных колонок (faux-column), левая колонка 
+    background: #fff url(left.gif) repeat-y left;*/
+}
+#wrapper
+{
+    /* Техника ложных колонок (faux-column), правая колонка 
+    background: url(right.gif) repeat-y right;*/
+}
+#header
+{
+    /*border: 1px solid #b0b0b0;
+    background: #b0b0b0;*/
+    /* Задаем "определение позиции" для элемента и устраняем peek-a-boo баг в IE (v6 sp2) */
+    /*width: 100%;*/
+    /* Предыдущее правило создает горизонтальную прокрутку в IE, избавимся от нее */
+    /*margin: 0 -1px;*/
+}
+#container
+{
+    /*float: left;*/
+    /*width: 100%;*//* IE удваивает внешние полоски (margins) у плавающих элементов, позаботимся об этой проблеме */
+    /*display: inline;*/ /* Тут мы расходимся во мнениях с Ryan Brill (автором статьи в ALA) */
+    /*margin-left: -200px;*/
+}
+#left
+{
+    float: left;
+    width: 150px; /* IE удваивает внешние полоски (margins) у плавающих элементов, позаботимся об этой проблеме */
+    display: inline;
+    margin-left: 200px;
+}
+#main
+{
+    /* ширина левой колонки #left (150px) + отрицательное поле (negative margin) у блока #container (200px) */
+    margin-left: 350px;
+}
+/* Примечание: если блок #sidebar будет короче чем блок #main, тогда можете удалить это правило */
+#sidebar
+{
+    /* Для сохранения контента блока #sidebar справа от блока #main, если контента в #main меньше */
+    padding-left: 100%; /* Возвращаем блок #sidebar на место, который был вытеснен из вьюпорта из-за отступа */
+    margin-left: -200px;
+}
+#sidebar p
+{
+    /* Удостоверимся что IE (v6 sp2) отображает элемент (та же проблема что и с блоком #header, но решение другое) */
+    position: relative;
+}
+#footer
+{
+    /* См. блок #outer_wrapper */
+    width: 100%; /* Для очистки #container */
+    clear: both;
+    background: url(images/footer-bg.png) repeat;
+    color: #FFF;
+}
+/* Этот класс применяется к 2-м структурным хакам в разметке. Первый "бессмысленный" элемент используется
+для очистки блока #left в NN6, а последний для очистки #container в NN4 */
+.clearing {height:0;clear:both}
+
+#mainContainer {
+    display: block;
+    margin-left: -1px;
+    width: 100%;
+}
+.hasLeftCol #mainContainer {
+    border-right: 1px solid #CCCCCC;
+}
+
+#leftCol {
+    float: left;
+    padding: 20px 0 0 2px;
+    width: 179px;
+    word-wrap: break-word;
+}
+.hasLeftCol #leftCol {
+    display: block;
+}
+#rightCol {
+    float: right;
+    margin-top: -10000px;
+    padding-right: 0;
+    width: 244px;
+    word-wrap: break-word;
+}
+.hasRightCol #rightCol {
+    margin-top: 0;
+}
+.hasLeftCol #rightCol {
+    padding-right: 20px;
+}
+#contentCol {
+}
+.hasLeftCol #contentCol {
+    border-left: 1px solid #CCCCCC;
+    margin-left: 181px;
+}
+#headerArea {
+    margin-bottom: 5px;
+    padding: 2px 0 12px;
+}
+.hasLeftCol #headerArea {
+    float: left;
+    margin: 0 20px;
+    width: 759px;
+}
+#contentArea {
+    margin-right: -1px;
+    padding-left: 1px;
+    word-wrap: break-word;
+}
+.hasLeftCol #contentArea, .hasRightCol #contentArea {
+    float: left;
+    margin-right: 0;
+}
+.hasLeftCol #contentArea {
+    padding: 0 20px;
+    width: 759px;
+}
+.hasRightCol #contentArea {
+    width: 714px;
+}
+.hasLeftCol .hasRightCol #contentArea {
+    padding-right: 0;
+    width: 493px;
+}
+/*
+div#header
+{
+    position:relative;
+}
+
+div#wrapper
+{
+    float:left;
+    width:100%;
+}
+
+div#content
+{
+    margin: 0 0 0 30px;
+}
+div#navigation
+{
+    float: left;
+    width: 120px;
+    margin-left: -100%;
+    background: #B9CAFF;
+}
+
+div#footer
+{
+    clear: left;
+    width: 100%;
+    background: url(images/footer-bg.png) repeat;
+    color: #FFF;
+}
+*/
+.content-st
+{
+    width: 790px;
+}
+
+
+.demos-nav, .left-nav .demos-nav dt, .left-nav .demos-nav dd, .left-nav .demos-nav ul, .left-nav .demos-nav li {
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3, h4 {
+    font-weight: normal;
+    margin: 0;
+}
+
+h4 {
+    border-bottom: 1px dashed #999999;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 21px;
+}
+
+.loading-icon{
+	background-image: url("images/ajax-loader.gif");
+    height: 32px;
+    width: 32px;
+	background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+    text-indent: -99999px;
+}
+#demo-frame-wrapper
+{
+    float: left;
+    margin-left: 10px;
+    width: auto;
+    min-width: 320px;
+}
+#demo-config-menu {
+    float: left;
+    width: 180px;
+}
+#demo-config-menu h4 {
+    border: 0 none;
+    color: #666666;
+    font-size: 13px;
+    font-weight: normal;
+    padding-left: 18px;
+}
+#demo-config-menu ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#demo-config-menu li {
+    font-size: 11px;
+    margin: 3px 0;
+    padding: 0 0 0 10px;
+}
+.demos-nav a:link, .demos-nav a:visited, #demo-notes a:link, #demo-notes a:visited, #demo-source a:link, #demo-source a:visited, #widget-docs a:link, #widget-docs a:visited {
+    color: #1B75BB;
+    text-decoration: none;
+}
+#demo-config-menu li a:link, #demo-config-menu li a:visited {
+    border-bottom: 1px dotted #B3B3B3;
+    display: block;
+    padding: 1px 8px 4px;
+}
+* html #demo-config-menu li a:link, * html #demo-config-menu li a:visited {
+    padding: 1px 8px 2px;
+}
+#demo-config-menu li a:hover, #demo-config-menu li a:active {
+    background-color: #F6F6F6;
+}
+#demo-config-menu li.demo-config-on {
+    background: url("images/demo-config-on-tile.gif") repeat-x scroll left center transparent;
+}
+#demo-config-menu li.demo-config-on a:link, #demo-config-menu li.demo-config-on a:visited, #demo-config-menu li.demo-config-on a:hover, #demo-config-menu li.demo-config-on a:active
+{
+    background: transparent url("images/demo-config-on-r.gif") no-repeat scroll right center;
+    border: 0 none;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    margin-left: -10px;
+    padding-left: 18px;
+}
+.demos-nav a:hover, .demos-nav a:active, #demo-notes a:hover, #demo-notes a:active, #demo-source a:hover, #demo-source a:active, #widget-docs a:hover, #widget-docs a:active {
+    color: #0B559B;
+}
+
+/* Navigation menu */
+#navigation-menu {
+    float: left;
+    width: 180px;
+}
+#navigation-menu h4 {
+    border: 0 none;
+    color: #666666;
+    font-size: 13px;
+    font-weight: normal;
+    padding-left: 18px;
+}
+#navigation-menu ul, #navigation-menu dl {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#navigation-menu li, #navigation-menu dd {
+    font-size: 11px;
+    margin: 3px 0;
+    padding: 0 0 0 10px;
+}
+.navigate a:link, .navigate a:visited, #demo-notes a:link, #demo-notes a:visited, #demo-source a:link, #demo-source a:visited, #widget-docs a:link, #widget-docs a:visited {
+    color: #1B75BB;
+    text-decoration: none;
+}
+#navigation-menu li a:link, #navigation-menu li a:visited, #navigation-menu dd a:link, #navigation-menu dd a:visited {
+    border-bottom: 1px dotted #B3B3B3;
+    display: block;
+    padding: 1px 8px 4px;
+}
+* html #navigation-menu li a:link, * html #navigation-menu li a:visited, * html #navigation-menu dd a:link, * html #navigation-menu dd a:visited {
+    padding: 1px 8px 2px;
+}
+#navigation-menu li a:hover, #navigation-menu li a:active, #navigation-menu dd a:hover, #navigation-menu dd a:active {
+    background-color: #F6F6F6;
+}
+#navigation-menu li.navigation-on, #navigation-menu dd.navigation-on {
+    background: url("images/navigation-on-tile.gif") repeat-x scroll left center transparent;
+}
+#navigation-menu li.navigation-on a:link, #navigation-menu li.navigation-on a:visited, #navigation-menu li.navigation-on a:hover, #navigation-menu li.navigation-on a:active,
+#navigation-menu dd.navigation-on a:link, #navigation-menu dd.navigation-on a:visited, #navigation-menu dd.navigation-on a:hover, #navigation-menu dd.navigation-on a:active
+{
+    background: transparent url("images/navigation-on-r.gif") no-repeat scroll right center;
+    border: 0 none;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    margin-left: -10px;
+    padding-left: 18px;
+}
+.navigate a:hover, .navigate a:active, #demo-notes a:hover, #demo-notes a:active, #demo-source a:hover, #demo-source a:active, #widget-docs a:hover, #widget-docs a:active {
+    color: #0B559B;
+}
+
+.ui-button-call-list span.ui-button-text {
+    padding: 1px;
+}
+
+.ui-autocomplete {
+	max-height: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-right: 20px;
+	font-weight: bold;
+}
+.ui-menu .ui-menu-item a.ui-state-hover {
+	font-weight: bold !important;
+}
+* html .ui-autocomplete {
+	height: 300px;
+}
+.form-font-big input, .form-font-big select, .form-font-big textarea {
+    font-size:15px !important;
+	font-weight: bold !important;
+}
+.ui-state-highlight-2 {
+    border: 1px solid #A6C9E2;
+    color: #222222;
+    background-color: #D2ECFF !important;
+}
+.ui-state-highlight-red
+{
+    color: #005AFF !important;
+}
+.ui-state-highlight-readonly
+{
+    background-color: #80FF80 !important;
+    background-image: none;
+}
+.ui-state-unread
+{
+    font-weight: bold;
+}
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon-ms-word { background-image: url(images/ms-word.ico) !important; }
+
+
+
+.ui-autocomplete-input
+{
+	border:1px solid lightsteelblue;
+	background-color:Window;		
+	background-image:url(images/i_search_input.png);
+	background-repeat:no-repeat;
+	background-position:right center;
+	font-family: Verdana,Arial,sans-serif;
+	padding-left:0px;	
+}
+
+.ui-autocomplete-loading
+{			
+	border:1px solid lightsteelblue;
+	background-color:Window;	
+	background-image:url(images/i_indicator.gif);
+	background-repeat:no-repeat;
+	background-position:right center;		
+	font-family: Verdana,Arial,sans-serif;
+	padding-left:0px;	
+}
+
+.ui-autocomplete-item, .ui-autocomplete-item a 
+{
+	font-weight: normal;	
+	color: #222222;
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 10px;
+	background-color: #ffffff;
+}
+
+.ui-autocomplete-item-alt, .ui-autocomplete-item-alt a 
+{
+	font-weight: normal;
+	color: #212121;
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 10px;
+	background-color:#f9edb3;
+}
+
+.ui-autocomplete-item a:hover, .ui-autocomplete-item-alt a:hover
+{
+	color: #212121;
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 10px;
+}
+
+.content-frame
+{
+    border: none;
+    padding: 1px;
+}
+
+.logo {
+    display: block;
+    background-image: url(images/docsys-26.png);
+    width: 26px;
+    height: 26px;
+}
+    .logo:hover {
+        transform: scale(1.2);
+    }
+
+.filter-row {
+    clear: both;
+    width: 100%;
+}
+
+.columns-options {
+    float: right;
+}
+
+.filter-options {
+    float: left;
+}
+
+.download-page {
+    background-color: transparent;
+    background-image: url("images/ms-word.ico") !important;
+    background-position: center center;
+    background-size: 100% auto;
+    border: medium none;
+    height: 24px;
+    margin: 0 20px;
+    width: 24px;
+}
+
+.card-status-0, .card-status-1, .card-status-2 {
+    color: #FA660E;
+    font-weight: bold;
+}
+.card-status-3, .card-status-4, .card-status-5, .card-status-6 {
+	color: blue;
+    font-weight: bold;
+}
+.card-enddate {
+    color: #FA660E;
+    width: 90px;
+}
+.card-close {
+    color: green;
+}
+.card-open {
+    color: red;
+}
+.doc-count {
+    color: red;
+    font-weight: bold;
+    float: right;
+}
+
+.admin-page .ui-jqgrid tr.jqgrow td {
+    font-weight: bold;
+}
+.home-page .ui-jqgrid tr.ui-state-hover {
+    font-weight: normal;
+}
+.home-page .ui-jqgrid tr.ui-state-hover.ui-state-unread {
+    font-weight: bold;
+}
+
+
+.ui-state-control-to-end {
+    border: 1px solid #A6C9E2;
+    background-color: none !important;
+    -webkit-animation: blink_red_blue 1s infinite linear alternate;
+    -moz-animation: blink_red_blue 1s infinite linear alternate;
+    -ms-animation: blink_red_blue 1s infinite linear alternate;
+    animation: blink_red_blue 1s infinite linear alternate;
+}
+
+@-webkit-keyframes blink_red {
+    from { background-color: rgba(225, 0, 50, 0); } to { background-color: rgba(225, 0, 50, 0.1); }
+}
+@-moz-keyframes blink_red {
+    from { background-color: rgba(225, 0, 50, 0); } to { background-color: rgba(225, 0, 50, 0.1); }
+}
+@keyframes blink_red {
+    from { background-color: rgba(225, 0, 50, 0); } to { background-color: rgba(225, 0, 50, 0.1); }
+}
+@-ms-keyframes blink_red {
+    from { background-color: rgba(225, 0, 50, 0); } to { background-color: rgba(225, 0, 50, 0.1); }
+}
+
+@-webkit-keyframes blink_red_blue {
+    from { background-color: rgba(210, 236, 355, 1); } to { background-color: rgba(225, 0, 50, 0.2); }
+}
+@-moz-keyframes blink_red_blue {
+    from { background-color: rgba(210, 236, 355, 1); } to { background-color: rgba(225, 0, 50, 0.2); }
+}
+@keyframes blink_red_blue {
+    from { background-color: rgba(210, 236, 355, 1); } to { background-color: rgba(225, 0, 50, 0.2); }
+}
+@-ms-keyframes blink_red_blue {
+    from { background-color: rgba(210, 236, 355, 1); } to { background-color: rgba(225, 0, 50, 0.2); }
+}
+
+.card-wrap {
+    background-color: #d7e9f5;
+    border-radius: 12%;
+    position: relative;
+}
+.card-resolution {
+    font-style: italic;
+    font-weight: normal;
+}
+.info-button {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: orange;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    font-family: times new roman;
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    top: -8px;
+
+    box-shadow: 0 3px 20px rgba(0,0,0,.25),
+    inset 0 2px 0 rgba(255,255,255,.6),
+    0 2px 0 rgba(0,0,0,.1),
+    inset 0 0 20px rgba(0,0,0,.1);
+}
+.bg-gray {
+    background-color: #e4e4e4;
+}
+/*
+.info-button:hover::after { 
+    content: attr(data-title);
+    position: absolute; 
+    left: 40%; top: 30%;
+    z-index: 1; 
+    background: rgba(255,255,230,0.9); 
+    font-family: Arial, sans-serif; 
+    font-size: 11px; 
+    padding: 5px 10px; 
+    border: 1px solid #333; 
+}
+*/
+.info-tooltip {
+    position: absolute; 
+    right: 12px;
+    bottom: 25px;
+    z-index: 1; 
+    background: rgba(255,255,230,0.9); 
+    font-family: Arial, sans-serif; 
+    font-size: 11px; 
+    padding: 5px 10px; 
+    border: 1px solid #333; 
+    border-radius: 5px;
+}
+.tooltip-clouse {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: skyblue;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 11px;
+    position: absolute;
+    right: -4px;
+    top: -6px;
+
+    box-shadow: 0 3px 20px rgba(0,0,0,.25),
+    inset 0 2px 0 rgba(255,255,255,.6),
+    0 2px 0 rgba(0,0,0,.1),
+    inset 0 0 20px rgba(0,0,0,.1);
+}
+
+.comments-wrapper {
+    
+}
+.comments-header {
+    height: 5%;
+}
+.comments-buttons {
+    height: 20%;
+}
+.comments-block {
+    height: 75%;
+}
+.comments-block > .comment-item:nth-child(2n) {
+    background-color: #a0e4ea;
+}
+.comments-block > .comment-item:nth-child(2n + 1) {
+    background-color: #b4deff;
+}
+.comment-item {
+    border: 1px dashed #C0C0C0;
+    border-radius: 10px;
+    text-align: left;
+    width: 100%;
+    margin: 1px;
+    padding: 2px;
+}
+.comment-time {
+    color: black;
+}
+.comment-content {
+    color: slategray;
+    font-style: italic;
+}

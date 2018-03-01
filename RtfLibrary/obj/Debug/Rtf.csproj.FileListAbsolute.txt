@@ -1,0 +1,13 @@
+D:\projects\RtfConstructor\RtfLibrary\bin\Debug\Rtf.dll
+D:\projects\RtfConstructor\RtfLibrary\bin\Debug\Rtf.pdb
+D:\projects\RtfConstructor\RtfLibrary\obj\Debug\Rtf.csprojResolveAssemblyReference.cache
+D:\projects\RtfConstructor\RtfLibrary\obj\Debug\Rtf.dll
+D:\projects\RtfConstructor\RtfLibrary\obj\Debug\Rtf.pdb
+D:\projects\document\Document\RtfLibrary\bin\Debug\Rtf.dll
+D:\projects\document\Document\RtfLibrary\bin\Debug\Rtf.pdb
+D:\projects\document\Document\RtfLibrary\obj\Debug\Rtf.dll
+D:\projects\document\Document\RtfLibrary\obj\Debug\Rtf.pdb
+D:\projects\docSys\Document\RtfLibrary\bin\Debug\Rtf.dll
+D:\projects\docSys\Document\RtfLibrary\bin\Debug\Rtf.pdb
+D:\projects\docSys\Document\RtfLibrary\obj\Debug\Rtf.dll
+D:\projects\docSys\Document\RtfLibrary\obj\Debug\Rtf.pdb

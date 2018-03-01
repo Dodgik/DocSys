@@ -1,0 +1,10 @@
+D:\projects\document\Document\PermissionMembership\obj\Release\PermissionMembership.csprojResolveAssemblyReference.cache
+D:\projects\document\Document\PermissionMembership\bin\Release\PermissionMembership.dll
+D:\projects\document\Document\PermissionMembership\bin\Release\PermissionMembership.pdb
+D:\projects\document\Document\PermissionMembership\obj\Release\PermissionMembership.dll
+D:\projects\document\Document\PermissionMembership\obj\Release\PermissionMembership.pdb
+D:\projects\docSys\Document\PermissionMembership\bin\Release\PermissionMembership.dll
+D:\projects\docSys\Document\PermissionMembership\bin\Release\PermissionMembership.pdb
+D:\projects\docSys\Document\PermissionMembership\obj\Release\PermissionMembership.csprojResolveAssemblyReference.cache
+D:\projects\docSys\Document\PermissionMembership\obj\Release\PermissionMembership.dll
+D:\projects\docSys\Document\PermissionMembership\obj\Release\PermissionMembership.pdb

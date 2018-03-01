@@ -1,0 +1,10 @@
+D:\projects\document\Document\RtfLibrary\bin\Release\Rtf.dll
+D:\projects\document\Document\RtfLibrary\bin\Release\Rtf.pdb
+D:\projects\document\Document\RtfLibrary\obj\Release\Rtf.csprojResolveAssemblyReference.cache
+D:\projects\document\Document\RtfLibrary\obj\Release\Rtf.dll
+D:\projects\document\Document\RtfLibrary\obj\Release\Rtf.pdb
+D:\projects\docSys\Document\RtfLibrary\bin\Release\Rtf.dll
+D:\projects\docSys\Document\RtfLibrary\bin\Release\Rtf.pdb
+D:\projects\docSys\Document\RtfLibrary\obj\Release\Rtf.csprojResolveAssemblyReference.cache
+D:\projects\docSys\Document\RtfLibrary\obj\Release\Rtf.dll
+D:\projects\docSys\Document\RtfLibrary\obj\Release\Rtf.pdb

@@ -1,0 +1,14 @@
+C:\dotNET.prj\VFS\VFS\VirtualFileSystem\obj\Debug\ResolveAssemblyReference.cache
+C:\dotNET.prj\VFS\VFS\VirtualFileSystem\bin\Debug\VirtualFileSystem.dll
+C:\dotNET.prj\VFS\VFS\VirtualFileSystem\bin\Debug\VirtualFileSystem.pdb
+C:\dotNET.prj\VFS\VFS\VirtualFileSystem\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+C:\dotNET.prj\VFS\VFS\VirtualFileSystem\obj\Debug\VirtualFileSystem.dll
+C:\dotNET.prj\VFS\VFS\VirtualFileSystem\obj\Debug\VirtualFileSystem.pdb
+D:\projects\document\Document\VirtualFileSystem\bin\Debug\VirtualFileSystem.dll
+D:\projects\document\Document\VirtualFileSystem\bin\Debug\VirtualFileSystem.pdb
+D:\projects\document\Document\VirtualFileSystem\obj\Debug\VirtualFileSystem.dll
+D:\projects\document\Document\VirtualFileSystem\obj\Debug\VirtualFileSystem.pdb
+D:\projects\docSys\Document\VirtualFileSystem\bin\Debug\VirtualFileSystem.dll
+D:\projects\docSys\Document\VirtualFileSystem\bin\Debug\VirtualFileSystem.pdb
+D:\projects\docSys\Document\VirtualFileSystem\obj\Debug\VirtualFileSystem.dll
+D:\projects\docSys\Document\VirtualFileSystem\obj\Debug\VirtualFileSystem.pdb

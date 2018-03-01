@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="SqlServices-Web.config Connection String" description="SqlServices Строка подключения в web.config, используемая приложением для доступа к базе данных." defaultValue="data source=SYMBIOSIS;initial catalog=DocSysDb;Integrated Security=True;Asynchronous Processing=true;Connection Timeout=300;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\projects\\docSys\\Document\\Document\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SqlServices']/@connectionString" />
+  </parameter>
+</parameters>

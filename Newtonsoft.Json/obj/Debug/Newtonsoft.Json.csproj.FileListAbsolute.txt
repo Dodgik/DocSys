@@ -1,0 +1,14 @@
+D:\projects\document\Document\Newtonsoft.Json\bin\Debug\Net40\Newtonsoft.Json.xml
+D:\projects\document\Document\Newtonsoft.Json\bin\Debug\Net40\Newtonsoft.Json.dll
+D:\projects\document\Document\Newtonsoft.Json\bin\Debug\Net40\Newtonsoft.Json.pdb
+D:\projects\document\Document\Newtonsoft.Json\bin\Debug\Net40\Newtonsoft.Json.dll.CodeAnalysisLog.xml
+D:\projects\document\Document\Newtonsoft.Json\bin\Debug\Net40\Newtonsoft.Json.dll.lastcodeanalysissucceeded
+D:\projects\document\Document\Newtonsoft.Json\obj\Debug\Newtonsoft.Json.dll
+D:\projects\document\Document\Newtonsoft.Json\obj\Debug\Newtonsoft.Json.pdb
+D:\projects\docSys\Document\Newtonsoft.Json\bin\Debug\Net40\Newtonsoft.Json.xml
+D:\projects\docSys\Document\Newtonsoft.Json\bin\Debug\Net40\Newtonsoft.Json.dll
+D:\projects\docSys\Document\Newtonsoft.Json\bin\Debug\Net40\Newtonsoft.Json.pdb
+D:\projects\docSys\Document\Newtonsoft.Json\bin\Debug\Net40\Newtonsoft.Json.dll.CodeAnalysisLog.xml
+D:\projects\docSys\Document\Newtonsoft.Json\bin\Debug\Net40\Newtonsoft.Json.dll.lastcodeanalysissucceeded
+D:\projects\docSys\Document\Newtonsoft.Json\obj\Debug\Newtonsoft.Json.dll
+D:\projects\docSys\Document\Newtonsoft.Json\obj\Debug\Newtonsoft.Json.pdb

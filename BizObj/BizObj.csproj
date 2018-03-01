@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19B7BD7A-8670-45BB-AED3-A6FD14C0F203}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BizObj</RootNamespace>
+    <AssemblyName>BizObj</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AdminScope.cs" />
+    <Compile Include="Controllers\AsyncDocument.cs" />
+    <Compile Include="Controllers\Decision.cs" />
+    <Compile Include="Controllers\DocTemplate.cs" />
+    <Compile Include="Controllers\WorkerScope.cs" />
+    <Compile Include="Models\Access.cs" />
+    <Compile Include="Data\Config.cs" />
+    <Compile Include="CustomException\CustomException.cs" />
+    <Compile Include="Data\DataBase.cs" />
+    <Compile Include="Data\SPHelper.cs" />
+    <Compile Include="Models\Document\AdminDocumets.cs" />
+    <Compile Include="Models\Document\BranchList.cs" />
+    <Compile Include="Models\Document\BranchType.cs" />
+    <Compile Include="Models\Document\CardStatus.cs" />
+    <Compile Include="Models\Document\Citizen.cs" />
+    <Compile Include="Models\Document\CityObject.cs" />
+    <Compile Include="Models\Document\CityObjectBase.cs" />
+    <Compile Include="Models\Document\CityObjectType.cs" />
+    <Compile Include="Models\Document\CityObjectTypeBase.cs" />
+    <Compile Include="Models\Document\Component.cs" />
+    <Compile Include="Models\Document\ComponentData.cs" />
+    <Compile Include="Models\Document\ControlCardGroup.cs" />
+    <Compile Include="Models\Document\Destination.cs" />
+    <Compile Include="Models\Document\DocAdminService.cs" />
+    <Compile Include="Models\Document\DocAdminServiceBlank.cs" />
+    <Compile Include="Models\Document\DocStatementAdminBlank.cs" />
+    <Compile Include="Models\Document\DocStatementBlank.cs" />
+    <Compile Include="Models\Document\DocStatementWorkerBlank.cs" />
+    <Compile Include="Models\Document\DocTemplateAdminBlank.cs" />
+    <Compile Include="Models\Document\DocTemplateWorkerBlank.cs" />
+    <Compile Include="Models\Document\DocumentComment.cs" />
+    <Compile Include="Models\Document\DocumentLabel.cs" />
+    <Compile Include="Models\Document\DocumentRegistration.cs" />
+    <Compile Include="Models\Document\IComponent.cs" />
+    <Compile Include="Models\Document\ControlCardBlank.cs" />
+    <Compile Include="Models\Document\DocTemplateBlank.cs" />
+    <Compile Include="Models\Document\DocumentFile.cs" />
+    <Compile Include="Models\Document\IWorker.cs" />
+    <Compile Include="Models\Document\Label.cs" />
+    <Compile Include="Models\Document\MenuTemplate.cs" />
+    <Compile Include="Models\Document\ControlCard.cs" />
+    <Compile Include="Models\Document\DeliveryType.cs" />
+    <Compile Include="Models\Document\Department.cs" />
+    <Compile Include="Models\Document\DocTemplate.cs" />
+    <Compile Include="Models\Document\DocStatement.cs" />
+    <Compile Include="Models\Document\DocStatus.cs" />
+    <Compile Include="Models\Document\DocType.cs" />
+    <Compile Include="Models\Document\Document.cs" />
+    <Compile Include="CustomException\DocumentException.cs" />
+    <Compile Include="Models\Document\DocumentCode.cs" />
+    <Compile Include="Models\Document\ExternalSource.cs" />
+    <Compile Include="Models\Document\ISimpleDictionary.cs" />
+    <Compile Include="Models\Document\InputDocType.cs" />
+    <Compile Include="Models\Document\InputMethod.cs" />
+    <Compile Include="Models\Document\InputSign.cs" />
+    <Compile Include="Models\Document\InputSubjectType.cs" />
+    <Compile Include="Models\Document\Organization.cs" />
+    <Compile Include="Models\Document\Post.cs" />
+    <Compile Include="Models\Document\QuestionType.cs" />
+    <Compile Include="Models\Document\SimpleDictionary.cs" />
+    <Compile Include="Models\Document\SocialCategory.cs" />
+    <Compile Include="Models\Document\SocialCategoryList.cs" />
+    <Compile Include="Models\Document\SocialStatus.cs" />
+    <Compile Include="Models\Document\Source.cs" />
+    <Compile Include="Models\Document\Worker.cs" />
+    <Compile Include="Models\Document\WorkerBase.cs" />
+    <Compile Include="Models\Document\WorkerDocumets.cs" />
+    <Compile Include="Models\Helpers\AsyncFile.cs" />
+    <Compile Include="Models\Helpers\AsyncUploader.cs" />
+    <Compile Include="Models\Helpers\DateTimeConverter.cs" />
+    <Compile Include="Models\Helpers\FormatHelper.cs" />
+    <Compile Include="Models\Helpers\ReportHelper.cs" />
+    <Compile Include="Models\Helpers\XmlHelper.cs" />
+    <Compile Include="Models\IAccess.cs" />
+    <Compile Include="Models\JqGrid\JqGridSettings.cs" />
+    <Compile Include="Models\Pager\Filter.cs" />
+    <Compile Include="Models\JqGrid\JqGridResults.cs" />
+    <Compile Include="Models\JqGrid\JqGridRow.cs" />
+    <Compile Include="Models\Pager\PageSettings.cs" />
+    <Compile Include="Models\Pager\Rule.cs" />
+    <Compile Include="Models\Helpers\JSONHelper.cs" />
+    <Compile Include="Models\Helpers\StringEnum.cs" />
+    <Compile Include="Models\Helpers\WhereOperation.cs" />
+    <Compile Include="Models\Report\CardInfo.cs" />
+    <Compile Include="Models\Report\ControlCardReport.cs" />
+    <Compile Include="Models\Report\DsFullStatistics.cs" />
+    <Compile Include="Models\Report\StatisticsBlank.cs" />
+    <Compile Include="Models\Report\StatisticRow.cs" />
+    <Compile Include="Models\Report\StatisticsReport.cs" />
+    <Compile Include="Models\Report\WorkerCards.cs" />
+    <Compile Include="Models\Report\WorkerCardsReport.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\Helpers\ValidateHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Newtonsoft.Json\Newtonsoft.Json.csproj">
+      <Project>{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}</Project>
+      <Name>Newtonsoft.Json</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PermissionMembership\PermissionMembership.csproj">
+      <Project>{0CA79D5E-4D02-4230-BC8B-2A9465CBD6F3}</Project>
+      <Name>PermissionMembership</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RtfLibrary\Rtf.csproj">
+      <Project>{09090C84-84D1-4884-B30E-80B5E9D5C598}</Project>
+      <Name>Rtf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VirtualFileSystem\VirtualFileSystem.csproj">
+      <Project>{BF1EDB40-A5BB-4F3B-BB5E-B9AF34F6C960}</Project>
+      <Name>VirtualFileSystem</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,10 @@
+D:\projects\document\Document\VirtualFileSystem\obj\Release\VirtualFileSystem.csprojResolveAssemblyReference.cache
+D:\projects\document\Document\VirtualFileSystem\bin\Release\VirtualFileSystem.dll
+D:\projects\document\Document\VirtualFileSystem\bin\Release\VirtualFileSystem.pdb
+D:\projects\document\Document\VirtualFileSystem\obj\Release\VirtualFileSystem.dll
+D:\projects\document\Document\VirtualFileSystem\obj\Release\VirtualFileSystem.pdb
+D:\projects\docSys\Document\VirtualFileSystem\bin\Release\VirtualFileSystem.dll
+D:\projects\docSys\Document\VirtualFileSystem\bin\Release\VirtualFileSystem.pdb
+D:\projects\docSys\Document\VirtualFileSystem\obj\Release\VirtualFileSystem.csprojResolveAssemblyReference.cache
+D:\projects\docSys\Document\VirtualFileSystem\obj\Release\VirtualFileSystem.dll
+D:\projects\docSys\Document\VirtualFileSystem\obj\Release\VirtualFileSystem.pdb
